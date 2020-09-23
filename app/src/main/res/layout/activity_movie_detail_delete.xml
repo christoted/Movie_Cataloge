@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Activity.MovieDetailActivitySave"
+    android:gravity="center_horizontal"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/selector">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorDefault">
+        <ImageView
+            android:id="@+id/movie_detail_iv_delete"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-4dp"
+            android:layout_marginEnd="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_black"
+            android:layout_centerHorizontal="true"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Title"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/movie_detail_tv_title_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Jackma"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Year"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/movie_detail_tv_year_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="2019"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="IMBD"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+                <TextView
+                    android:id="@+id/movie_detail_tv_imbd_id_delete"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="1235665"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textSize="25sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/movie_detail_button_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector"
+            android:text="Delete"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

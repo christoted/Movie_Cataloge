@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_movie_fragment_iptlayout_search"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/input_bg"
+        android:hint="Search Movie"
+        android:paddingStart="22dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="22dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search_movie_fragment_edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/lightGray"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_movie_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/single_row_item"
+        />
+
+</LinearLayout>
